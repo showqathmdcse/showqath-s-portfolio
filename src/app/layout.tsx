@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const jetbrainsMono = JetBrains_Mono({
+const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
 });
 
@@ -18,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${jetbrainsMono.className} h-full`}>
-      <body className="min-h-full flex flex-col scanline">{children}</body>
+    <html lang="en" className={`${plusJakarta.className} h-full`}>
+      <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
 }
